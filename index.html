@@ -16,20 +16,30 @@
         <link rel="stylesheet" href="assets/css/style.css">
 
         <!-- Link to Google fonts stylesheet -->
-        
+        <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+
     </head>
 
     <body>
 
-        <div class="game">
+        <div class="game center">
 
-            <p id="target">Number to match: </p>
-            <p id="userScore">Current score: </p>
+            <h3>Click crystals to try and match the magic number</h3>
+
+            <!-- Where our magic number is displayed -->
+            <h2 id="target"></h2>
+
+            <!-- Users score tally -->
+            <p id="userScore">0</p>
+
+            <!-- Crystals will populate here -->
+            <div class="crystals">
+            </div>
+
+            <!-- Score tracking -->
             <p id="wins">Games won: </p>
             <p id="loss">Games lost: </p>
 
-            <div class="crystals">
-            </div>
         </div>
 
         <!-- Link to our Javascript file -->

@@ -1,5 +1,14 @@
+body {
+    background: black;
+    background-image: url("../images/gold.jpg");
+    opacity: .9;
+    font-family: 'Eagle Lake', cursive;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
 .game {
     background-image: url("../images/lair.jpg");
+    opacity: .95;
     height: 848px;
     width: 1260px;
 }
@@ -8,13 +17,44 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 80px;
 }
 
 .crystal {
+    position: relative;
     height: 200px;
     width: 200px;
 }
 
-img {
-    width: 95%;
+/* centers the image */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.userScore {
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 10px gold, 0 0 50px purple, 0 0 15px deeppink;
+    font-size: 60px;
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
 }
