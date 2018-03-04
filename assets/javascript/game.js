@@ -11,7 +11,7 @@ var startGame = function () {
 
     crystalNumber = Math.floor(Math.random() * 101) + 19;
 
-    $("#result").html("Number to match: " + crystalNumber );
+    $("#target").html("Number to match: " + crystalNumber );
 
     for (var i = 0; i < 4; i++) {
 
@@ -33,6 +33,8 @@ $(document).on("click", ".crystal", function() {
 
     var num = parseInt($(this).attr("data-random"));
     userScore += num;
+    
+    $("#userScore").html("Your current score: " + userScore);
 
     if (userScore === crystalNumber) {
         win ++;
