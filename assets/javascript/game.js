@@ -7,7 +7,14 @@ var userScore = 0;
 // Game setup
 var startGame = function () {
 
-    $(".crystals").empty();
+    $(".crystals_trial").empty();
+
+   var images = [
+    "../images/crystal3.png",
+    "C:/Users/joell/Desktop/crystals-collector/assets/images/crystal6.png",
+    "C:/Users/joell/Desktop/crystals-collector/assets/images/crystal2.png",
+    "C:/Users/joell/Desktop/crystals-collector/assets/images/crystal8.png"
+    ]
 
     crystalNumber = Math.floor(Math.random() * 101) + 19;
 
@@ -22,7 +29,13 @@ var startGame = function () {
                 "class": "crystal",
                 "data-random": random
             });
-        $(".crystals").append(crystal);
+
+           crystal.css({
+            "background-image":"url('" + images[i] + "')",
+            "background-size":"cover"
+           });
+
+        $(".crystals_trial").append(crystal);
     }
 }
 
@@ -33,8 +46,8 @@ $(document).on("click", ".crystal", function() {
 
     var num = parseInt($(this).attr("data-random"));
     userScore += num;
-    
-    $("#userScore").html("Your current score: " + userScore);
+
+    $("#userScore").html("Current score: " + userScore);
 
     if (userScore === crystalNumber) {
         win ++;

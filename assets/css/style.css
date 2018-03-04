@@ -5,7 +5,16 @@
 }
 
 .crystal {
-    border: 2px palevioletred solid;
     height: 200px;
     width: 200px;
+}
+
+.crystals_trial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 95%;
 }
