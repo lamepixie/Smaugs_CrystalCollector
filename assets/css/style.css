@@ -1,3 +1,9 @@
+.game {
+    background-image: url("../images/lair.jpg");
+    height: 848px;
+    width: 1260px;
+}
+
 .crystals {
     display: flex;
     justify-content: space-around;
@@ -7,12 +13,6 @@
 .crystal {
     height: 200px;
     width: 200px;
-}
-
-.crystals_trial {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 img {
