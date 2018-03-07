@@ -26,6 +26,12 @@ body {
     width: 200px;
 }
 
+.crystal:hover {
+    cursor: pointer;
+    -webkit-transform: rotateY(140deg); /* Safari */
+    transform: rotateY(140deg);
+}
+
 /* centers the image */
 .center {
     margin-left: auto;
