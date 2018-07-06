@@ -6,4 +6,7 @@ In this Game, the user must click crystals in an effort to match their score to 
 
 *Have fun and get clicking!*
 
+Play the game: 
+[Smaug's Treasure Hoard!](https://lamepixie.github.io/Smaugs_CrystalCollector/)
+
 ![Smaug's Treasure Hoard](assets/images/crystals_screengrab.JPG)
